@@ -58,7 +58,7 @@ for elemento in datos["features"]:
         texto += f"{lon},{lat},0 "
 
     ET.SubElement(ring, "coordinates").text = texto.strip()
-  arbol = ET.ElementTree(kml)
+arbol = ET.ElementTree(kml)
 
 ET.indent(arbol, space="  ")
 
